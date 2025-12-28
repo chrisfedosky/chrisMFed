@@ -1,7 +1,8 @@
-/* use CSS grid in some fashion for the layout. it's perfect for that!
- */
-//light mode
+html, body {
+    box-sizing: border-box;
+}
 :root {
+    /* light mode: */
     --bg-dark: oklch(0.92 0.065 80);
     --bg: oklch(0.96 0.065 80);
     --bg-light: oklch(1 0.065 80);
@@ -16,7 +17,7 @@
     --warning: oklch(0.5 0.13 100);
     --success: oklch(0.5 0.13 160);
     --info: oklch(0.5 0.13 260);
-    /* dark mode:
+    /* dark mode
     --bg-dark: oklch(0.1 0.065 80);
     --bg: oklch(0.15 0.065 80);
     --bg-light: oklch(0.2 0.065 80);
@@ -32,4 +33,49 @@
     --success: oklch(0.7 0.13 160);
     --info: oklch(0.7 0.13 260);
      */
+}
+
+body {
+    border: 1px solid darkred;
+    display: grid;
+    grid-template-areas:
+            'header-container header-container header-container'
+            'hero-container hero-container about-container'
+            'projects-container projects-container projects-container'
+            'contact-container social-container skills-container'
+            'footer-container footer-container footer-container';
+    grid-gap: 1rem;
+    padding: 2rem;
+}
+
+.header-container {
+    grid-area: header-container;
+}
+
+.hero-container {
+    grid-area: hero-container;
+}
+
+.about-container {
+    grid-area: about-container;
+}
+
+.projects-container {
+    grid-area: projects-container;
+}
+
+.contact-container {
+    grid-area: contact-container;
+}
+
+.social-container {
+    grid-area: social-container;
+}
+
+.skills-container {
+    grid-area: skills-container;
+}
+
+.footer-container {
+    grid-area: footer-container;
 }
