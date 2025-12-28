@@ -34,44 +34,65 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-    'header header header'
-    'sidebar-left main sidebar-right'
-    'footer footer footer';
+    'header-container header-container header-container'
+    'hero-container hero-container about-container'
+    'project-container project-container project-container'
+    'contact-container social-container skills-container'
+    'footer-container footer-container footer-container';
     grid-gap: 10px;
     background-color: var(--bg-light);
     padding: 10px;
 }
 
-.header {
-    grid-area: header;
+.header-container {
+    grid-area: header-container;
     background-color: var(--bg);
     padding: 20px;
     text-align: center;
 }
 
-.sidebar-left {
-    grid-area: sidebar-left;
+.hero-container {
+    grid-area: hero-container;
+    background-color: var(--bg);
+    padding: 20px;
+    text-align: center;
+}
+.about-container {
+    grid-area: about-container;
+    background-color: var(--bg);
+    padding: 20px;
+    text-align: center;
+}
+.project-container {
+    grid-area: project-container;
     background-color: var(--bg);
     padding: 20px;
     text-align: center;
 }
 
-.main {
-    grid-area: main;
+.contact-container {
+    grid-area: contact-container;
     background-color: var(--bg);
     padding: 20px;
     text-align: center;
 }
 
-.sidebar-right {
-    grid-area: sidebar-right;
+.social-container {
+    grid-area: social-container;
     background-color: var(--bg);
     padding: 20px;
     text-align: center;
 }
 
-.footer {
-    grid-area: footer;
+.skills-container {
+    grid-area: skills-container;
+    background-color: var(--bg);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    grid-area: footer-container;
     background-color: var(--bg);
     padding: 20px;
     text-align: center;
