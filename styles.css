@@ -65,6 +65,29 @@ body {
     padding: 20px;
     text-align: center;
 }
+.header-logo {
+    grid-area: header-logo;
+    width: 100px;
+    height: 100px;
+    contain: strict;
+}
+/* nav bar w flexbox prime example */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: var(--bg-dark);
+}
 
 .hero-container {
     grid-area: hero-container;
