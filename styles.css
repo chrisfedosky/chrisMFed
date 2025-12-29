@@ -68,8 +68,8 @@ body {
 }
 .header-logo {
     grid-area: header-logo;
-    width: 100px;
-    height: 100px;
+    width: 8rem;
+    height: 8rem;
     contain: strict;
     margin: 0 auto;
 }
