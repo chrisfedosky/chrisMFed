@@ -53,7 +53,7 @@ body {
     display: grid;
     grid-template-areas:
     'header-container header-container header-container'
-    'hero-container hero-container about-container'
+    'hero-container hero-container cta-container'
     'project-container project-container project-container'
     'contact-container social-container skills-container'
     'footer-container footer-container footer-container';
@@ -101,8 +101,11 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
 }
-.about-container {
-    grid-area: about-container;
+.cta-container {
+    grid-area: cta-container;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--bg);
     padding: 20px;
     text-align: center;
