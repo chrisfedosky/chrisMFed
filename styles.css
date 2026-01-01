@@ -24,7 +24,7 @@
     --warning: oklch(0.5 0.13 100);
     --success: oklch(0.5 0.13 160);
     --info: oklch(0.5 0.13 260);
-    /* dark mode
+    /* dark mode:
     --bg-dark: oklch(0.1 0.065 80);
     --bg: oklch(0.15 0.065 80);
     --bg-light: oklch(0.2 0.065 80);
@@ -45,6 +45,8 @@
 /* add media queries to ensure responsiveness */
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Space Mono', monospace, sans-serif;
 }
 .grid-container {
@@ -56,7 +58,6 @@ body {
     'contact-container social-container skills-container'
     'footer-container footer-container footer-container';
     grid-gap: 10px;
-    background-color: var(--bg-light);
     padding: 10px;
 }
 
