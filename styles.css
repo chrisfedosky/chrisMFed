@@ -112,9 +112,31 @@ nav ul li a:hover {
 }
 .project-container {
     grid-area: project-container;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
     background-color: var(--bg);
     padding: 20px;
     text-align: center;
+}
+
+.plt-card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black /* remove later */
+}
+
+.gMaids-card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black /* remove later */
+}
+
+.ramio-card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black /* remove later */
 }
 
 .contact-container {
